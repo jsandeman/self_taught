@@ -44,6 +44,22 @@ sep_sentences[0] += '?'
 sep_sentences[1] += '?'
 print(sep_sentences)
 
-### Ecercise 4: Replace every instance of "s" in "A screaming comes across the sky." with a dollar sign.
+### Exercise 4: Replace every instance of "s" in "A screaming comes across the sky." with a dollar sign.
 ###
+sentence = "A screaming comes across the sky."
+new_sentence = sentence.replace('s', '$')
+print(new_sentence)
+
+### Exercise 5: Use a method to find the first index of the character "m" in the string "Hemingway".
+###
+word = 'Hemingway'
+index = word.find('m')
+print(f'The index of the first occurrence of the character \'m\' is {index}')
+
+### Exercise 7: Create the string "three three three" using concatenation, and then again using multiplication.
+###
+three = " ".join(["three", "three", "three"])
+alt_three = "three " *3
+print(three)
+print(alt_three)
 
