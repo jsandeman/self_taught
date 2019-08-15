@@ -29,8 +29,8 @@ user_wins = 0
 computer_wins = 0
 
 while game_round <= 3:
-    user_choice = input("Rock, paper, or scissors? ")
-    user_choice = user_choice.lower()
+    user_choice = input("\nRock, paper, or scissors? ")
+    user_choice = user_choice.strip().lower()
     try:
         user_choice_index = choices.index(user_choice)
     except:
@@ -57,6 +57,7 @@ while game_round <= 3:
     game_round += 1
 
 # Game is over, determine the winner.
+print('\n')
 if user_wins > 1:
     print("You win the game!")
 elif computer_wins > 1:
